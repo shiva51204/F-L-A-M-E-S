@@ -12,11 +12,12 @@ btn.onclick = function(){
     let flames = ['f','l','a','m','e','s'];
     let ot;
 
-    if((!Boolean(...fname))||(!Boolean(...sname))){
-        
-        window.alert("Only valid names!!!Again!!!");
-        opt.textContent="";
-    }
+    if (!name1.value.trim() || !name2.value.trim()) {
+    alert("Only valid names!!! Again!!!");
+    opt.textContent = "";
+    return;
+}
+
     else{
         let cnt = removeCommonCharacters(fname,sname);
         let fin = iterate(flames,cnt);
@@ -40,16 +41,18 @@ function removeCommonCharacters(name1,name2){
     return count;
 }
 
-function iterate(array,count){
-    let start = 0;
-    while(array.length>1){
-        array.splice((start+count)%array.length,1);
+function iterate(array, count) {
+    let index = 0;
+    while (array.length > 1) {
+        index = (index + count - 1) % array.length;
+        array.splice(index, 1);
     }
-
     return array[0];
 }
 
+
 function mapper(lettr,out){
+    let ot="";
     out.className = "";
     switch(lettr){
         case 'f':
