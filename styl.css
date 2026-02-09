@@ -1,0 +1,100 @@
+body{
+    font-family: "dosis",sans-serif;
+    font-size: larger;
+    text-align: center;
+    background-color: rgb(180, 234, 234);
+}
+div{
+    margin-top:80px;
+    margin-bottom: 10px;
+    
+}
+#button{
+    border:5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(224, 247, 123);
+    margin:8px 2px;
+    font-size:30px;
+    background-color: greenyellow;
+}
+
+#output{
+    
+    margin : 50px 50px;
+    font-size: 80px;
+}
+
+input{
+    width:250px;
+    height: 20px;
+    text-align: center;
+    font-family: "dosis",sans-serif;
+    font-size:large;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    background-color: rgb(255, 252, 252);
+}
+input:hover{
+    background-color: #ece9e9;
+}
+
+
+#heading{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin : auto;
+    font-size: xxx-large;
+    border: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(186, 85, 38);
+    background-color: rgb(241, 61, 61);
+    color:rgb(29, 56, 47);
+}
+
+.result-f { color: blue; }
+
+.result-a { color: green; }
+.result-m { color: orange; }
+.result-e { color: purple; }
+.result-s { color: brown; }
+
+
+@keyframes colorChange {
+    0% { color: blue; }
+    25% { color: green; }
+    50% { color: yellow; }
+    100% { color: blue; }
+}
+
+.animated-text {
+    animation: colorChange 1s infinite;
+}
+
+.result-l {
+    font-weight: normal;
+    background: linear-gradient(
+        90deg,
+        #ff0040,
+        #ff8000,
+        #ffee00,
+        #33ff00,
+        #00ffee,
+        #0066ff,
+        #cc00ff,
+        #ff0040
+    );
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbowFlow 6s ease-in-out infinite;
+}
+
+@keyframes rainbowFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
