@@ -56,27 +56,27 @@ function mapper(lettr,out){
     out.className = "";
     switch(lettr){
         case 'f':
-            ot = "Friends....Better luck next time..";
+            ot = "Friends";
             out.classList.add("result-f");
             break;
         case 'l':
-            ot = "LOVERS!!!";
+            ot = "LOVERS";
             out.classList.add("result-l");
             break;
         case 'a':
-            ot = "Acquaintance.     Don't expect too much";
+            ot = "Acquaintance.";
             out.classList.add("result-a");
             break;
         case 'm':
-            ot = "HAPPY MARRIED LIFE!!!" ;
+            ot = "marriage" ;
             out.classList.add("result-l");
             break;
         case 'e':
-            ot = "Enemies. atleast better than friends...";
+            ot = "Enemies";
             out.classList.add("result-e");
             break;
         case 's':
-            ot="SISTER!!! HAHAHAHA!!!!  you got FAMILYZONED!!!";
+            ot="SISTER";
             out.classList.add("result-s");
             break;
         default:
